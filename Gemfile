@@ -9,11 +9,16 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem "sassc-rails"
+gem "rails-controller-testing"
+
 gem "minitest"
 gem "minitest-reporters"
 
 gem "guard"
 gem "guard-minitest"
+
+gem "bootstrap"
+gem "jquery-rails"
 
 gem "redis", ">= 4.0.1"
 gem "kredis"
