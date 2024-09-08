@@ -1,0 +1,8 @@
+<% provide(:title, "Our Users") %>
+<% @users.each |user| do %>
+  <div class="user-card">
+    <%= gravatar_for @user %>
+    <%= @user.name %>,
+    <%= @user.email %>
+  </div>
+<% end %>
