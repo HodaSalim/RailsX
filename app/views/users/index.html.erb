@@ -1,8 +1,23 @@
 <% provide(:title, "Our Users") %>
-<% @users.each do |user| %>
-  <div class="user-card m-2">
-    <%= gravatar_for user %>
-    <%= user.name %>,
-    <%= user.email %>
-  </div>
-<% end %>
+<h1>All Users</h1>
+
+<%= will_paginate %>
+<div class="users">
+  <% @users.each do |user| %>
+    <div class="user-card m-2">
+      <%= gravatar_for user %>
+      <%= user.name %>,
+      <%= user.email %>
+      <% if current_user.admin? && !current_user?(user) %>
+        |
+        <%= link_to "delete",
+        user,
+        data: {
+          "turbo-method": :delete,
+          turbo_confirm: "You sure?",
+        } %>
+    <% end %>
+    </div>
+  <% end %>
+</div>
+<%= will_paginate %>

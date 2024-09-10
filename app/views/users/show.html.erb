@@ -1,5 +1,8 @@
 <% provide(:title, @user.name) %>
 <div class="user-card">
   <%= gravatar_for @user %>
+  <br>
   <%= @user.name %>, <%= @user.email %>
+  <br>
+  <%= link_to "Edit Profile Info", edit_user_path %>
 </div>
