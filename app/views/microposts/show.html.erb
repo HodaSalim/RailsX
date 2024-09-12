@@ -1,0 +1,8 @@
+<% provide title: "Timeline" %>
+<%= will_paginate @microposts %>
+<ol class="microposts">
+  <% @microposts.each do |micropost| %>
+    <%= render @microposts %>
+  <% end %>
+</ol>
+<%= will_paginate %>

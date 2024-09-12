@@ -20,6 +20,9 @@ gem "guard-minitest"
 gem "bootstrap"
 gem "will_paginate"
 gem "will_paginate-bootstrap-style"
+gem "active_storage_validations"
+gem "image_processing"
+
 gem "jquery-rails"
 
 gem "redis", ">= 4.0.1"
