@@ -1,6 +1,6 @@
-@import "custom_bootstrap";
+$primary: #7EACB5;
 
-$bs-blue: #7EACB5;
+@import "bootstrap";
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -127,19 +127,3 @@ select,
 input {
   height: auto !important;
 }
-
-
-// .checkbox {
-//   margin-top: -10px;
-//   margin-bottom: 10px;
-//
-//   span {
-//     margin-left: 20px;
-//     font-weight: normal;
-//   }
-// }
-//
-// #session_remember_me {
-//   width: auto;
-//   margin-left: 0;
-// }
