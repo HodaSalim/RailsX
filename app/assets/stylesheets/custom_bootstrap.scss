@@ -12,7 +12,6 @@ $primary: #7EACB5;
 body{
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   background: #FFF4EA;
 }
@@ -75,6 +74,10 @@ a{
   color: #FFF4EA;
 }
 
+#logo{
+  width: 65%;
+}
+
 
 /* footer */
 footer {
@@ -82,6 +85,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  justify-self: flex-end;
 }
 
 footer a {
@@ -126,4 +130,33 @@ select,
 
 input {
   height: auto !important;
+}
+
+
+/* microposts */
+.microposts{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  border-bottom: 1px solid #C96868;
+  gap: 10px;
+  font-size: .9rem;
+  margin-bottom: .5rem;
+
+  .content{
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 500px;
+    }
+  }
 }
