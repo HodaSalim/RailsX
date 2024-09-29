@@ -20,4 +20,3 @@ class RelationshipTest < ActiveSupport::TestCase
     assert_not @relationship.valid?
   end
 end
-

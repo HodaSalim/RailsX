@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 7.2.1"
-gem "sprockets-rails"
 gem "mysql2", "~> 0.5"
 gem "puma", ">= 5.0"
 gem "importmap-rails"
@@ -65,3 +64,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "devise", "~> 4.9"
